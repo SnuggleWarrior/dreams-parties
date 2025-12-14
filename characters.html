@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Characters | Dreams Parties</title>
-  <meta name="description" content="Browse princesses, superheroes, and characters available for your party." />
+  <meta name="description" content="Browse princesses, mascots, and superheroes for your party in LA, Riverside, and OC." />
   <link rel="stylesheet" href="styles.css" />
   <script defer src="app.js"></script>
 </head>
@@ -18,75 +18,95 @@
         <a href="contact.html" class="btn">Book</a>
       </nav>
     </div>
+
+    <div class="wrap topbar">
+      <div class="topbar-left">
+        <span class="pill">LA • Riverside • OC</span>
+        <span class="pill">English • Español • Русский</span>
+      </div>
+      <div class="topbar-right">
+        <a class="mini-link" href="tel:19097574021">(909) 757-4021</a>
+        <span class="dot">•</span>
+        <a class="mini-link" href="https://instagram.com/dreamspartyca" target="_blank" rel="noopener">@dreamspartyca</a>
+      </div>
+    </div>
   </header>
 
   <main class="wrap section">
     <div class="page-head">
       <div>
         <h1>Characters</h1>
-        <p class="muted">Add or rename characters anytime. These are starter examples.</p>
+        <p class="muted">
+          Replace these starters with your real character names/photos anytime. Book by request — we’ll confirm availability.
+        </p>
       </div>
 
       <div class="search">
-        <input id="searchInput" placeholder="Search characters (e.g., princess, hero)..." />
+        <input id="searchInput" placeholder="Search (princess, mascot, superhero)..." />
       </div>
     </div>
 
     <div class="filters">
       <button class="chip chip-btn active" data-filter="all">All</button>
       <button class="chip chip-btn" data-filter="princess">Princesses</button>
-      <button class="chip chip-btn" data-filter="hero">Superheroes</button>
       <button class="chip chip-btn" data-filter="mascot">Mascots</button>
+      <button class="chip chip-btn" data-filter="hero">Superheroes</button>
     </div>
 
     <section class="grid3" id="characterGrid">
       <article class="card character" data-tags="princess">
         <div class="character-media ph ph1"></div>
-        <h3>Classic Princess</h3>
-        <p class="muted small">Singing • Story time • Photos</p>
+        <h3>Princess (Example)</h3>
+        <p class="muted small">Crown ceremony • Singing moment • Photos</p>
+        <a class="btn primary full" href="contact.html">Request this character</a>
+      </article>
+
+      <article class="card character" data-tags="mascot">
+        <div class="character-media ph ph2"></div>
+        <h3>Mascot (Example)</h3>
+        <p class="muted small">High energy • Games • Photos</p>
         <a class="btn primary full" href="contact.html">Request this character</a>
       </article>
 
       <article class="card character" data-tags="hero">
-        <div class="character-media ph ph2"></div>
-        <h3>Masked Superhero</h3>
-        <p class="muted small">Training • Games • Pose-offs</p>
+        <div class="character-media ph ph3"></div>
+        <h3>Superhero (Example)</h3>
+        <p class="muted small">Interactive fun • Big entrance • Photos</p>
         <a class="btn primary full" href="contact.html">Request this character</a>
       </article>
 
       <article class="card character" data-tags="princess">
-        <div class="character-media ph ph3"></div>
-        <h3>Ice Princess</h3>
-        <p class="muted small">Dance time • Photos • Story</p>
-        <a class="btn primary full" href="contact.html">Request this character</a>
-      </article>
-
-      <article class="card character" data-tags="hero">
         <div class="character-media ph ph4"></div>
-        <h3>Web Hero</h3>
-        <p class="muted small">Hero drills • Games • Photos</p>
+        <h3>Princess (Example 2)</h3>
+        <p class="muted small">Dancing • Happy Birthday • Cake moment</p>
         <a class="btn primary full" href="contact.html">Request this character</a>
       </article>
 
       <article class="card character" data-tags="mascot">
         <div class="character-media ph ph3"></div>
-        <h3>Friendly Mascot</h3>
-        <p class="muted small">Dance • High-fives • Photos</p>
+        <h3>Mascot (Example 2)</h3>
+        <p class="muted small">Face painting (timing varies) • Games</p>
         <a class="btn primary full" href="contact.html">Request this character</a>
       </article>
 
-      <article class="card character" data-tags="princess">
+      <article class="card character" data-tags="hero">
         <div class="character-media ph ph2"></div>
-        <h3>Fairy Princess</h3>
-        <p class="muted small">Wishes • Story • Photos</p>
+        <h3>Superhero (Example 2)</h3>
+        <p class="muted small">Games + prizes • Photos with guests</p>
         <a class="btn primary full" href="contact.html">Request this character</a>
       </article>
     </section>
 
     <section class="section card">
       <h2>Want a specific character?</h2>
-      <p class="muted">Put the exact name in the booking form and we’ll do our best to make it happen.</p>
-      <a class="btn primary" href="contact.html">Book now</a>
+      <p class="muted">
+        Put the exact character name in the booking form. For pricing in other cities or adding an extra character,
+        DM us on Instagram.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="contact.html">Book now</a>
+        <a class="btn ghost" href="https://instagram.com/dreamspartyca" target="_blank" rel="noopener">DM @dreamspartyca</a>
+      </div>
     </section>
   </main>
 
@@ -97,6 +117,7 @@
         <a href="characters.html">Characters</a>
         <a href="packages.html">Packages</a>
         <a href="contact.html">Book</a>
+        <a href="tel:19097574021">Call</a>
       </div>
     </div>
     <div class="wrap muted small footer-bottom">© <span id="year"></span> Dreams Parties.</div>
