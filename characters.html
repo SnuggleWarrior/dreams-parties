@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Characters | Dreams Parties</title>
+  <meta name="description" content="Browse princesses, superheroes, and characters available for your party." />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html"><span class="logo">✨</span><span>Dreams Parties</span></a>
+      <nav class="links">
+        <a class="active" href="characters.html">Characters</a>
+        <a href="packages.html">Packages</a>
+        <a href="contact.html" class="btn">Book</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap section">
+    <div class="page-head">
+      <div>
+        <h1>Characters</h1>
+        <p class="muted">Add or rename characters anytime. These are starter examples.</p>
+      </div>
+
+      <div class="search">
+        <input id="searchInput" placeholder="Search characters (e.g., princess, hero)..." />
+      </div>
+    </div>
+
+    <div class="filters">
+      <button class="chip chip-btn active" data-filter="all">All</button>
+      <button class="chip chip-btn" data-filter="princess">Princesses</button>
+      <button class="chip chip-btn" data-filter="hero">Superheroes</button>
+      <button class="chip chip-btn" data-filter="mascot">Mascots</button>
+    </div>
+
+    <section class="grid3" id="characterGrid">
+      <article class="card character" data-tags="princess">
+        <div class="character-media ph ph1"></div>
+        <h3>Classic Princess</h3>
+        <p class="muted small">Singing • Story time • Photos</p>
+        <a class="btn primary full" href="contact.html">Request this character</a>
+      </article>
+
+      <article class="card character" data-tags="hero">
+        <div class="character-media ph ph2"></div>
+        <h3>Masked Superhero</h3>
+        <p class="muted small">Training • Games • Pose-offs</p>
+        <a class="btn primary full" href="contact.html">Request this character</a>
+      </article>
+
+      <article class="card character" data-tags="princess">
+        <div class="character-media ph ph3"></div>
+        <h3>Ice Princess</h3>
+        <p class="muted small">Dance time • Photos • Story</p>
+        <a class="btn primary full" href="contact.html">Request this character</a>
+      </article>
+
+      <article class="card character" data-tags="hero">
+        <div class="character-media ph ph4"></div>
+        <h3>Web Hero</h3>
+        <p class="muted small">Hero drills • Games • Photos</p>
+        <a class="btn primary full" href="contact.html">Request this character</a>
+      </article>
+
+      <article class="card character" data-tags="mascot">
+        <div class="character-media ph ph3"></div>
+        <h3>Friendly Mascot</h3>
+        <p class="muted small">Dance • High-fives • Photos</p>
+        <a class="btn primary full" href="contact.html">Request this character</a>
+      </article>
+
+      <article class="card character" data-tags="princess">
+        <div class="character-media ph ph2"></div>
+        <h3>Fairy Princess</h3>
+        <p class="muted small">Wishes • Story • Photos</p>
+        <a class="btn primary full" href="contact.html">Request this character</a>
+      </article>
+    </section>
+
+    <section class="section card">
+      <h2>Want a specific character?</h2>
+      <p class="muted">Put the exact name in the booking form and we’ll do our best to make it happen.</p>
+      <a class="btn primary" href="contact.html">Book now</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div class="brand footer-brand"><span class="logo">✨</span><span>Dreams Parties</span></div>
+      <div class="footer-links">
+        <a href="characters.html">Characters</a>
+        <a href="packages.html">Packages</a>
+        <a href="contact.html">Book</a>
+      </div>
+    </div>
+    <div class="wrap muted small footer-bottom">© <span id="year"></span> Dreams Parties.</div>
+  </footer>
+</body>
+</html>
