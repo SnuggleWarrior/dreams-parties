@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Book | Dreams Parties</title>
-  <meta name="description" content="Request a booking for a princess, superhero, or character party visit." />
+  <meta name="description" content="Request a booking for Dreams Parties. Serving LA, Riverside and OC. English • Spanish • Russian." />
   <link rel="stylesheet" href="styles.css" />
   <script defer src="app.js"></script>
 </head>
@@ -18,11 +18,26 @@
         <a class="active btn" href="contact.html">Book</a>
       </nav>
     </div>
+
+    <div class="wrap topbar">
+      <div class="topbar-left">
+        <span class="pill">Serving: Los Angeles • Riverside • Orange County</span>
+        <span class="pill">English • Español • Русский</span>
+      </div>
+      <div class="topbar-right">
+        <a class="mini-link" href="tel:19097574021">(909) 757-4021</a>
+        <span class="dot">•</span>
+        <a class="mini-link" href="https://instagram.com/dreamspartyca" target="_blank" rel="noopener">@dreamspartyca</a>
+      </div>
+    </div>
   </header>
 
   <main class="wrap section">
     <h1>Book a Character</h1>
-    <p class="muted">Submit your request. We’ll confirm availability and details.</p>
+    <p class="muted">
+      Submit your request and we’ll confirm availability. For pricing in other cities or adding an extra character,
+      DM us on Instagram: <a href="https://instagram.com/dreamspartyca" target="_blank" rel="noopener">@dreamspartyca</a>.
+    </p>
 
     <section class="grid2 section">
       <form class="card" id="bookingForm"
@@ -43,7 +58,7 @@
           </label>
 
           <label>Character Requested
-            <input name="character" placeholder="e.g., Ice Princess" required />
+            <input name="character" placeholder="Princess / Mascot / Superhero (or exact name)" required />
           </label>
 
           <label># of Characters (1 or 2)
@@ -54,7 +69,7 @@
           </label>
 
           <label>Party Location (City or Address)
-            <input name="location" placeholder="City, State or full address" required />
+            <input name="location" placeholder="Los Angeles / Riverside / OC + address" required />
           </label>
 
           <label>Preferred Date
@@ -64,6 +79,21 @@
           <label>Preferred Time
             <input name="time" type="time" />
           </label>
+
+          <label>Language Preference
+            <select name="language_preference">
+              <option value="English">English</option>
+              <option value="Spanish">Spanish</option>
+              <option value="Russian">Russian</option>
+            </select>
+          </label>
+
+          <label>Package
+            <select name="package">
+              <option value="2 Hour Party Package (LA City) - $300 (1 Character)">2 Hour Party Package (LA City) - $300 (1 Character)</option>
+              <option value="Other / Ask on IG">Other / Ask on IG</option>
+            </select>
+          </label>
         </div>
 
         <label>Special Instructions
@@ -71,37 +101,53 @@
             placeholder="Theme, parking notes, birthday child name, surprise entrance, etc."></textarea>
         </label>
 
-        <!-- Optional: hidden subject line for nicer emails -->
         <input type="hidden" name="_subject" value="New Booking Request - Dreams Parties" />
 
         <button class="btn primary full" type="submit">Submit Request</button>
 
         <p class="muted small">
-          After you submit, scroll down to view our availability calendar.
+          After you submit, scroll down to view the availability calendar.
         </p>
       </form>
 
       <aside class="card">
-        <h2>What happens next?</h2>
-        <ol class="steps">
-          <li>Submit your request.</li>
-          <li>We confirm availability.</li>
-          <li>You receive a confirmation message.</li>
-          <li>Your party appears on the calendar once booked.</li>
-        </ol>
+        <h2>Contact</h2>
+        <div class="contact-cards">
+          <div class="card inset">
+            <div class="mini-title">Call / Text</div>
+            <a class="btn primary full" href="tel:19097574021">(909) 757-4021</a>
+          </div>
+          <div class="card inset">
+            <div class="mini-title">Instagram</div>
+            <a class="btn full" href="https://instagram.com/dreamspartyca" target="_blank" rel="noopener">DM @dreamspartyca</a>
+            <p class="muted small" style="margin:10px 0 0">
+              Pricing for other cities or adding an extra character.
+            </p>
+          </div>
+        </div>
 
         <div class="callout">
-          <strong>Tip:</strong>
-          <span class="muted small">
-            If you want the calendar to show “busy” blocks only, set Google Calendar sharing to free/busy.
-          </span>
+          <strong>Featured</strong>
+          <div class="muted small">Proudly featured by major TV and press outlets.</div>
+        </div>
+
+        <div class="callout" style="margin-top:12px">
+          <strong>Service Areas</strong>
+          <div class="muted small">Los Angeles • Riverside • Orange County</div>
+        </div>
+
+        <div class="callout" style="margin-top:12px">
+          <strong>Languages</strong>
+          <div class="muted small">English • Español • Русский</div>
         </div>
       </aside>
     </section>
 
     <section class="section">
       <h2>Availability Calendar</h2>
-      <p class="muted">This can display booked times (or free/busy).</p>
+      <p class="muted">
+        Paste your Google Calendar embed link below so booked times show here.
+      </p>
 
       <div class="card">
         <iframe
@@ -123,6 +169,8 @@
         <a href="characters.html">Characters</a>
         <a href="packages.html">Packages</a>
         <a href="contact.html">Book</a>
+        <a href="tel:19097574021">Call</a>
+        <a href="https://instagram.com/dreamspartyca" target="_blank" rel="noopener">Instagram</a>
       </div>
     </div>
     <div class="wrap muted small footer-bottom">© <span id="year"></span> Dreams Parties.</div>
