@@ -1,19 +1,14 @@
 # Dreams Parties (GitHub Pages)
 
-This is a starter website for booking character parties (princesses, superheroes, mascots).
+Starter website for Dreams Parties (LA • Riverside • OC).
+Languages: English • Español • Русский
 
-## Files
-- index.html
-- characters.html
-- packages.html
-- contact.html
-- styles.css
-- app.js
-
-## Setup
-1. Replace Formspree URL in `contact.html`:
+## Setup (IMPORTANT)
+1) Replace Formspree URL in `contact.html`:
    - https://formspree.io/f/YOUR_FORM_ID
-2. Replace the Google Calendar iframe `src` in `contact.html` with your embed link.
 
-## Publish
-GitHub repo → Settings → Pages → Deploy from branch: main / root
+2) Replace Google Calendar iframe `src` in `contact.html`:
+   - PASTE_YOUR_GOOGLE_CALENDAR_EMBED_LINK_HERE
+
+## Publish on GitHub Pages
+Repo → Settings → Pages → Deploy from branch: main / root
