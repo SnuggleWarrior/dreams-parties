@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Book | Dreams Parties</title>
+  <meta name="description" content="Request a booking for a princess, superhero, or character party visit." />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html"><span class="logo">✨</span><span>Dreams Parties</span></a>
+      <nav class="links">
+        <a href="characters.html">Characters</a>
+        <a href="packages.html">Packages</a>
+        <a class="active btn" href="contact.html">Book</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap section">
+    <h1>Book a Character</h1>
+    <p class="muted">Submit your request. We’ll confirm availability and details.</p>
+
+    <section class="grid2 section">
+      <form class="card" id="bookingForm"
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST">
+
+        <div class="grid2">
+          <label>Full Name
+            <input name="name" autocomplete="name" required />
+          </label>
+
+          <label>Email
+            <input name="email" type="email" autocomplete="email" required />
+          </label>
+
+          <label>Phone Number
+            <input name="phone" type="tel" autocomplete="tel" required />
+          </label>
+
+          <label>Character Requested
+            <input name="character" placeholder="e.g., Ice Princess" required />
+          </label>
+
+          <label># of Characters (1 or 2)
+            <select name="num_characters" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+            </select>
+          </label>
+
+          <label>Party Location (City or Address)
+            <input name="location" placeholder="City, State or full address" required />
+          </label>
+
+          <label>Preferred Date
+            <input name="date" type="date" />
+          </label>
+
+          <label>Preferred Time
+            <input name="time" type="time" />
+          </label>
+        </div>
+
+        <label>Special Instructions
+          <textarea name="instructions" rows="5"
+            placeholder="Theme, parking notes, birthday child name, surprise entrance, etc."></textarea>
+        </label>
+
+        <!-- Optional: hidden subject line for nicer emails -->
+        <input type="hidden" name="_subject" value="New Booking Request - Dreams Parties" />
+
+        <button class="btn primary full" type="submit">Submit Request</button>
+
+        <p class="muted small">
+          After you submit, scroll down to view our availability calendar.
+        </p>
+      </form>
+
+      <aside class="card">
+        <h2>What happens next?</h2>
+        <ol class="steps">
+          <li>Submit your request.</li>
+          <li>We confirm availability.</li>
+          <li>You receive a confirmation message.</li>
+          <li>Your party appears on the calendar once booked.</li>
+        </ol>
+
+        <div class="callout">
+          <strong>Tip:</strong>
+          <span class="muted small">
+            If you want the calendar to show “busy” blocks only, set Google Calendar sharing to free/busy.
+          </span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section">
+      <h2>Availability Calendar</h2>
+      <p class="muted">This can display booked times (or free/busy).</p>
+
+      <div class="card">
+        <iframe
+          title="Dreams Parties Calendar"
+          src="PASTE_YOUR_GOOGLE_CALENDAR_EMBED_LINK_HERE"
+          style="border:0"
+          width="100%"
+          height="650"
+          frameborder="0"
+          scrolling="no"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div class="brand footer-brand"><span class="logo">✨</span><span>Dreams Parties</span></div>
+      <div class="footer-links">
+        <a href="characters.html">Characters</a>
+        <a href="packages.html">Packages</a>
+        <a href="contact.html">Book</a>
+      </div>
+    </div>
+    <div class="wrap muted small footer-bottom">© <span id="year"></span> Dreams Parties.</div>
+  </footer>
+</body>
+</html>
