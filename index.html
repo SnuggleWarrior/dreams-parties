@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dreams Parties</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; background:#f5f5f5; padding:20px; }
+    header { background:#7c3aed; color:white; padding:20px; border-radius:10px; text-align:center; }
+    section { background:white; padding:20px; margin-top:20px; border-radius:10px; }
+    input, button { width:100%; padding:10px; margin-top:10px; }
+    button { background:#7c3aed; color:white; border:none; cursor:pointer; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Dreams Parties</h1>
+  <p>Princess & Superhero Party Bookings</p>
+</header>
+
+<section>
+  <h2>Book a Party</h2>
+  <form onsubmit="event.preventDefault(); alert('Booking submitted!');">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="tel" placeholder="Phone" required>
+    <input type="text" placeholder="Character (1 or 2)" required>
+    <input type="date" required>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+</body>
+</html>
