@@ -1,47 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Dreams Parties</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dreams Parties | Princesses & Superheroes</title>
+  <meta name="description" content="Book princesses, superheroes, and characters for birthdays and events. Serving your area with magical party experiences." />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
 </head>
 <body>
-<header>
-  <h1>Dreams Parties</h1>
-  <p>Princess & Superhero Party Bookings</p>
-</header>
+  <header class="header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html">
+        <span class="logo">✨</span>
+        <span>Dreams Parties</span>
+      </a>
+      <nav class="links">
+        <a href="characters.html">Characters</a>
+        <a href="packages.html">Packages</a>
+        <a href="contact.html" class="btn">Book</a>
+      </nav>
+    </div>
+  </header>
 
-<section>
-  <h2>Book a Party</h2>
-  <form id="bookingForm">
-    <input name="name" placeholder="Name" required>
-    <input name="email" type="email" placeholder="Email" required>
-    <input name="phone" placeholder="Phone" required>
-    <input name="location" placeholder="Location" required>
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="pill">Princesses • Superheroes • Mascots</p>
+          <h1>Make their birthday feel like a movie.</h1>
+          <p class="lead">
+            Book unforgettable character visits with games, photos, singing, story time, and superhero training.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="contact.html">Book a Character</a>
+            <a class="btn ghost" href="characters.html">Browse Characters</a>
+          </div>
 
-    <select name="count">
-      <option value="1">1 Character</option>
-      <option value="2">2 Characters</option>
-    </select>
+          <div class="trust">
+            <div class="trust-item">
+              <div class="trust-num" data-counter="250">0</div>
+              <div class="trust-label">Parties Hosted</div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-num" data-counter="4.9">0</div>
+              <div class="trust-label">Avg Rating</div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-num" data-counter="2">0</div>
+              <div class="trust-label">Characters Available</div>
+            </div>
+          </div>
+        </div>
 
-    <input name="character1" placeholder="Character #1" required>
-    <input name="character2" placeholder="Character #2 (optional)">
-    <input name="date" type="date" required>
-    <input name="time" type="time" required>
-
-    <textarea name="instructions" placeholder="Special instructions"></textarea>
-
-    <button type="submit">Submit Booking</button>
-  </form>
-</section>
-
-<section>
-  <h2>Calendar</h2>
-  <div id="calendar"></div>
-</section>
-
-<script src="app.js"></script>
-</body>
-</html>
-
+        <div class="hero-card card">
+          <div class="hero-card-top">
+            <div class="badge">Fast booking</div>
+            <div class="badge alt">Family friendly</div>
+          </div>
+          <div class="photo-grid" aria-h
